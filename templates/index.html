@@ -12,7 +12,10 @@
   <div class="page">  
     {% for tag in badges %}
     <div class="item">
-      <div class="color-bar {{tag.sector}}"></div>
+      <div class="color-bar {{tag.sector}}">
+        <span class="sector">{{tag.sector}}</span>
+      </div>
+
       <h1 class="name">{{tag.name}}</h1>
       <h2>{{tag.job}}</h2>
       <div class="icon">

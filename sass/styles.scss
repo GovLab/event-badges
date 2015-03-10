@@ -10,10 +10,9 @@ $pink: #e6235a;
 .page {
   width: 215mm;
   height: 279mm;
-  border: 1px solid #eee;
+  // border: 1px solid #eee;
   padding: 4mm;
 }
-
 
 .item {
   width: 4in;
@@ -28,16 +27,32 @@ $pink: #e6235a;
   .color-bar {
     position: absolute;
     left: 0;
-    top: 0;
-    height: 100%;
-    width: 5mm;
+    bottom: -39px;
+    height: 10mm;
+    width: 3in;
     background-color: #ddd;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    padding: 5px 10px;
 
-    &.gov { background-color: $blue; }
+    .sector {
+      text-transform: uppercase;
+      color: white;
+      padding: 0;
+      line-height: 1;
+      font-size: 32px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      opacity: .5;
+    }
+
+    &.government { background-color: $blue; }
     &.private { background-color: $green; }
     &.ngo { background-color: $orange; }
-    &.edu { background-color: $pink; }
+    &.education { background-color: $pink; }
   }
+
+  
 
   h1, h2 {
     margin: 0;
@@ -57,9 +72,9 @@ $pink: #e6235a;
   .icon {
     position: absolute;
     left: calc(50% - 10mm);
-    top: calc(50% - 7mm);
-    width: 76px;
-    height: 76px;
+    top: calc(50% - 3mm);
+    width: 62px;
+    height: 62px;
     opacity: .8;
   }
 

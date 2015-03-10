@@ -4,7 +4,6 @@
 .page {
   width: 215mm;
   height: 279mm;
-  border: 1px solid #eee;
   padding: 4mm; }
 
 .item {
@@ -19,17 +18,29 @@
   .item .color-bar {
     position: absolute;
     left: 0;
-    top: 0;
-    height: 100%;
-    width: 5mm;
-    background-color: #ddd; }
-    .item .color-bar.gov {
+    bottom: -39px;
+    height: 10mm;
+    width: 3in;
+    background-color: #ddd;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    padding: 5px 10px; }
+    .item .color-bar .sector {
+      text-transform: uppercase;
+      color: white;
+      padding: 0;
+      line-height: 1;
+      font-size: 32px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      opacity: .5; }
+    .item .color-bar.government {
       background-color: #00adef; }
     .item .color-bar.private {
       background-color: #3aba9b; }
     .item .color-bar.ngo {
       background-color: #f15e22; }
-    .item .color-bar.edu {
+    .item .color-bar.education {
       background-color: #e6235a; }
   .item h1, .item h2 {
     margin: 0;
@@ -43,9 +54,9 @@
   .item .icon {
     position: absolute;
     left: calc(50% - 10mm);
-    top: calc(50% - 7mm);
-    width: 76px;
-    height: 76px;
+    top: calc(50% - 3mm);
+    width: 62px;
+    height: 62px;
     opacity: .8; }
   .item .branding {
     font-weight: 100;
