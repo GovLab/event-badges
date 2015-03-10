@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box; }
+
+.page {
+  width: 215mm;
+  height: 279mm;
+  border: 1px solid #eee;
+  padding: 4mm; }
+
+.item {
+  width: 4in;
+  height: 3in;
+  border: 1px solid #eee;
+  padding: 1cm 15mm;
+  position: relative;
+  font-family: 'proxima-nova';
+  display: inline-block;
+  margin: 2px; }
+  .item .color-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5mm;
+    background-color: #ddd; }
+    .item .color-bar.gov {
+      background-color: #00adef; }
+    .item .color-bar.private {
+      background-color: #3aba9b; }
+    .item .color-bar.ngo {
+      background-color: #f15e22; }
+    .item .color-bar.edu {
+      background-color: #e6235a; }
+  .item h1, .item h2 {
+    margin: 0;
+    padding: 0; }
+  .item h1 {
+    font-size: 26px;
+    color: #51307F; }
+  .item h2 {
+    font-size: 18px;
+    font-weight: 300; }
+  .item .icon {
+    position: absolute;
+    left: calc(50% - 10mm);
+    top: calc(50% - 7mm);
+    width: 76px;
+    height: 76px;
+    opacity: .8; }
+  .item .branding {
+    font-weight: 100;
+    position: absolute;
+    bottom: 5mm;
+    width: calc(100% - 25mm); }
+    .item .branding p {
+      margin: 0;
+      overflow: hidden;
+      vertical-align: bottom; }
+    .item .branding .logo {
+      width: 10mm;
+      float: left;
+      margin-right: 5mm; }
+    .item .branding .event-name {
+      font-size: 16px; }
+    .item .branding .date, .item .branding .place {
+      font-size: 12px;
+      float: left;
+      text-transform: uppercase; }
+    .item .branding .place {
+      float: right;
+      text-align: right;
+      padding-top: 3px; }
+
+@media print {
+  .page-break {
+    display: block;
+    page-break-before: always; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+$blue: #00adef;
+$green: #3aba9b;
+$orange: #f15e22;
+$pink: #e6235a;
+
+.page {
+  width: 215mm;
+  height: 279mm;
+  border: 1px solid #eee;
+  padding: 4mm;
+}
+
+
+.item {
+  width: 4in;
+  height: 3in;
+  border: 1px solid #eee;
+  padding: 1cm 15mm;
+  position: relative;
+  font-family: 'proxima-nova';
+  display: inline-block;
+  margin: 2px;
+
+  .color-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5mm;
+    background-color: #ddd;
+
+    &.gov { background-color: $blue; }
+    &.private { background-color: $green; }
+    &.ngo { background-color: $orange; }
+    &.edu { background-color: $pink; }
+  }
+
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  } 
+
+  h1 {
+    font-size: 26px;
+    color: #51307F;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .icon {
+    position: absolute;
+    left: calc(50% - 10mm);
+    top: calc(50% - 7mm);
+    width: 76px;
+    height: 76px;
+    opacity: .8;
+  }
+
+  .branding {
+    font-weight: 100;
+    position: absolute;
+    bottom: 5mm;
+    width: calc(100% - 25mm);
+
+    p {
+      margin: 0;
+      overflow: hidden;
+      vertical-align: bottom;
+    }
+
+    .logo {
+      width: 10mm;
+      float: left;
+      margin-right: 5mm;
+    }
+
+    .event-name {
+      font-size: 16px;
+    }
+
+    .date, .place {
+      font-size: 12px;
+      float: left;
+      text-transform: uppercase;
+    }
+
+    .place {
+      float: right;
+      text-align: right;
+      padding-top: 3px;
+    }
+  }
+}
+
+@media print {
+  .page-break { display: block; page-break-before: always; }
+}
