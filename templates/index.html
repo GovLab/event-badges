@@ -9,8 +9,9 @@
   
 </head>
 <body>
-  <div class="page">  
-    {% for tag in badges %}
+
+    <div class="page">
+    {% for tag in badges %}  
     <div class="item">
       <div class="icon {{tag.sector}}">
         <img src="static/{{tag.field}}.svg" alt="">
@@ -30,7 +31,9 @@
       </div>
     </div>
     {% if loop.index is divisibleby 6 %}
+    </div> <!-- class="page" -->
     <div class="page-break"></div><!-- Every 6 badges -->
+    <div class="page">  
     {% endif %}
     {% endfor %}
   </div>
