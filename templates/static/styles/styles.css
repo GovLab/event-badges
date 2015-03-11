@@ -1,13 +1,17 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background-color: #eee; }
+
 .page {
   width: 215mm;
   height: 279mm;
-  padding: 4mm; }
+  padding: 1in .31in .57in .34in;
+  background-color: #FFF; }
 
 .item {
-  width: 4in;
+  width: calc(4in - 6px);
   height: 3in;
   border: 1px solid #eee;
   padding: 1cm 15mm;
@@ -15,7 +19,9 @@
   font-family: 'proxima-nova';
   display: inline-block;
   vertical-align: top;
-  margin: 2px; }
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 -5px 0 0; }
   .item .color-bar {
     position: absolute;
     left: 0;
