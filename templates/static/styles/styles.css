@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box; }
 
+@page {
+  width: 8.5in;
+  height: 11in;
+  padding: 1in .25in 1in .25in;
+  background-color: #FFF; }
+
 body {
   background-color: #eee; }
 
@@ -40,13 +46,13 @@ body {
       font-weight: 300;
       letter-spacing: 1px;
       opacity: .5; }
-  .item .government {
+  .item .gov {
     background-color: #00adef; }
-  .item .private {
+  .item .com {
     background-color: #3aba9b; }
-  .item .ngo {
+  .item .org {
     background-color: #f15e22; }
-  .item .education {
+  .item .edu {
     background-color: #e6235a; }
   .item h1, .item h2, .item h3 {
     margin: 0;
