@@ -1,36 +1,42 @@
 ---
 - name: Claudio Mendonca
   job: Graphic Designer
+  banner: .com
   sector: private
   field: education
   org: National Institute of Health
 
 - name: Claudio Mendonca
   job: Graphic Designer
+  banner: .edu
   sector: government
   field: climate
   org: National Oceanic and Atmospheric Administration
 
 - name: Claudio Mendonca
   job: Graphic Designer
+  banner: .gov
   sector: ngo
   field: health
   org: Executive Office of the President of the United States
 
 - name: Claudio Mendonca
   job: Graphic Designer
+  banner: .org
   sector: education
   field: education
   org: The Governance Lab
 
 - name: Claudio Mendonca
   job: Graphic Designer
+  banner: .org
   sector: private
   field: climate
   org: The GovLab
 
 - name: Claudio Mendonca
   job: Graphic Designer
+  banner: .org
   sector: ngo
   field: health
   org: The GovLab

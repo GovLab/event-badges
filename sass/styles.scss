@@ -34,10 +34,9 @@ $pink: #e6235a;
     background-color: #ddd;
     transform: rotate(-90deg);
     transform-origin: top left;
-    padding: 5px 10px;
+    padding: 1px 10px;
 
     .sector {
-      text-transform: uppercase;
       color: white;
       padding: 0;
       line-height: 1;
@@ -46,32 +45,34 @@ $pink: #e6235a;
       letter-spacing: 1px;
       opacity: .5;
     }
-
-    &.government { background-color: $blue; }
-    &.private { background-color: $green; }
-    &.ngo { background-color: $orange; }
-    &.education { background-color: $pink; }
   }
+
+  .government { background-color: $blue; }
+  .private { background-color: $green; }
+  .ngo { background-color: $orange; }
+  .education { background-color: $pink; }
 
   h1, h2, h3 {
     margin: 0;
     padding: 0;
+    width: 310px;
   } 
 
   h1 {
-    font-size: 26px;
+    margin-top: 40px;
+    font-size: 32px;
     color: #51307F;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300;
   }
 
   h3 {
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 6px;
     color: #999;
     letter-spacing: .5px;
@@ -79,11 +80,21 @@ $pink: #e6235a;
 
   .icon {
     position: absolute;
-    left: 48%;
-    top: 52%;
-    width: 48px;
-    height: 48px;
-    opacity: .8;
+    left: 10px;
+    top: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    z-index: 10;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 11px;
+    width: 58px;
+    height: 58px;
+
+    img {
+      width: 36px;
+      height: 36px;
+      opacity: .5;
+    }
   }
 
   .branding {

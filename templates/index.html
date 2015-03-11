@@ -12,16 +12,17 @@
   <div class="page">  
     {% for tag in badges %}
     <div class="item">
+      <div class="icon {{tag.sector}}">
+        <img src="static/{{tag.field}}.svg" alt="">
+      </div>
       <div class="color-bar {{tag.sector}}">
-        <span class="sector">{{tag.sector}}</span>
+        <span class="sector">{{tag.banner}}</span>
       </div>
 
       <h1 class="name">{{tag.name}}</h1>
       <h2>{{tag.job}}</h2>
       <h3>{{tag.org}}</h3>
-      <div class="icon">
-        <img src="static/{{tag.field}}.svg" alt="">
-      </div>
+      
       <div class="branding">
         <div class="logo"><img src="static/logo.svg" alt=""></div>
         <p class="event-name">Accelerating Data Collaboratives</p>

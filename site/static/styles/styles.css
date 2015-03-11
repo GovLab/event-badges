@@ -25,9 +25,8 @@
     background-color: #ddd;
     transform: rotate(-90deg);
     transform-origin: top left;
-    padding: 5px 10px; }
+    padding: 1px 10px; }
     .item .color-bar .sector {
-      text-transform: uppercase;
       color: white;
       padding: 0;
       line-height: 1;
@@ -35,37 +34,47 @@
       font-weight: 300;
       letter-spacing: 1px;
       opacity: .5; }
-    .item .color-bar.government {
-      background-color: #00adef; }
-    .item .color-bar.private {
-      background-color: #3aba9b; }
-    .item .color-bar.ngo {
-      background-color: #f15e22; }
-    .item .color-bar.education {
-      background-color: #e6235a; }
+  .item .government {
+    background-color: #00adef; }
+  .item .private {
+    background-color: #3aba9b; }
+  .item .ngo {
+    background-color: #f15e22; }
+  .item .education {
+    background-color: #e6235a; }
   .item h1, .item h2, .item h3 {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    width: 310px; }
   .item h1 {
-    font-size: 26px;
+    margin-top: 40px;
+    font-size: 32px;
     color: #51307F; }
   .item h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300; }
   .item h3 {
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 6px;
     color: #999;
     letter-spacing: .5px; }
   .item .icon {
     position: absolute;
-    left: 48%;
-    top: 52%;
-    width: 48px;
-    height: 48px;
-    opacity: .8; }
+    left: 10px;
+    top: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 11px;
+    width: 58px;
+    height: 58px; }
+    .item .icon img {
+      width: 36px;
+      height: 36px;
+      opacity: .5; }
   .item .branding {
     font-weight: 100;
     position: absolute;
