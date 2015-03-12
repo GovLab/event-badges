@@ -11,17 +11,24 @@ body {
   background-color: #eee;
 }
 
+@page {
+  width: 8.5in;
+  height: 11in;
+  padding: 1in .25in 1in .25in;
+  background-color: #FFF; 
+}
+
 .page {
-  width: 215mm;
-  height: 279mm;
-  padding: 1in .31in .57in .34in;
-  background-color: #FFF;
+  width: 8.5in;
+  height: 11in;
+  padding: 1in .25in 1in .25in;
+  background-color: #FFF; 
 }
 
 .item {
   width: calc(4in - 6px);
   height: 3in;
-  border: 1px solid #eee;
+  border: 1px solid gray;
   padding: 1cm 15mm;
   position: relative;
   font-family: 'proxima-nova';
@@ -53,10 +60,10 @@ body {
     }
   }
 
-  .government { background-color: $blue; }
-  .private { background-color: $green; }
-  .ngo { background-color: $orange; }
-  .education { background-color: $pink; }
+  .gov { background-color: $blue; }
+  .com { background-color: $green; }
+  .org { background-color: $orange; }
+  .edu { background-color: $pink; }
 
   h1, h2, h3 {
     margin: 0;
