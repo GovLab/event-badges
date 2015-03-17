@@ -5,7 +5,11 @@
   width: 8.5in;
   height: 11in;
   padding: 1in .25in 1in .25in;
-  background-color: #FFF; }
+  background-color: red; }
+
+.reverse {
+  -webkit-filter: invert(1);
+}
 
 body {
   background-color: #eee; }
@@ -13,8 +17,8 @@ body {
 .page {
   width: 8.5in;
   height: 11in;
-  padding: 1in .25in 1in .25in;
-  background-color: #FFF; }
+  padding: 1in 0.25in 1in .25in;
+  background-color: white; }
 
 .item {
   width: calc(4in);
@@ -25,7 +29,7 @@ body {
   font-family: 'proxima-nova';
   display: inline-block;
   vertical-align: top;
-  border-radius: 8px;
+  border-radius: 0px;
   overflow: hidden;
   margin: 0 -5px 0 0; }
   .item .color-bar {
@@ -79,7 +83,9 @@ body {
     position: absolute;
     left: 80%;
     top: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    //box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-width: 0px;
     z-index: 10;
     border-radius: 50%;
     overflow: hidden;
@@ -89,7 +95,7 @@ body {
     .item .icon img {
       width: 36px;
       height: 36px;
-      opacity: .5; }
+      opacity: 1; }
   .item .branding {
     font-weight: 100;
     position: absolute;

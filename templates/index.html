@@ -13,15 +13,17 @@
     <div class="page">
     {% for tag in badges %}  
     <div class="item">
-      <div class="icon {{tag.sector}}">
-        <img src="static/{{tag.field}}.svg" alt="">
+      {% if tag.field != 'N/A' %}
+      <div style="background-color: white;" class="icon {{tag.sector}}">
+        <img class="reverse" src="static/{{tag.field}}.svg" alt="">
       </div>
+      {% endif %}
       <div class="color-bar {{tag.sector}}">
         <span class="sector">.{{tag.sector}}</span>
       </div>
 
       <h1 class="name">{{tag.fname}} {{tag.lname}}</h1>
-      <h2>{{tag.job}}</h2>
+      <h2>{{tag.job + "&nbsp;<br/>"}}</h2>
       <h3>{{tag.org}}</h3>
       
       <div class="branding">

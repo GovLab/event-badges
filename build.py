@@ -15,7 +15,10 @@ outputpath  = os.path.join(cwd, "site")
 # We load the data we want to use in the templates.
 #BADGES    = yaml.load(open('data/badges.yaml'))
 
-SECTOR_MAPPING = { 'Government': 'gov', 'Business': 'com', 'Nonprofit': 'org', 'Research Institute': 'edu' }
+SECTOR_MAPPING = { 'Government': 'gov',
+'Business': 'com',
+'Nonprofit': 'org',
+'Research Institute': 'edu' }
 
 def getSector(str):
 	if str in SECTOR_MAPPING:
