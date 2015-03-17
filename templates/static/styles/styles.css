@@ -1,10 +1,14 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background-color: #eee; }
+
 @page {
   width: 8.5in;
   height: 11in;
   padding: 1in .25in 1in .25in;
+<<<<<<< HEAD
   background-color: red; }
 
 .reverse {
@@ -14,6 +18,9 @@
 body {
   background-color: #eee; }
 
+=======
+  background-color: #FFF; }
+>>>>>>> 4681ac775b4fcb85a19b5ce7c6747898f52080e0
 .page {
   width: 8.5in;
   height: 11in;
@@ -21,9 +28,9 @@ body {
   background-color: white; }
 
 .item {
-  width: calc(4in);
+  width: calc(4in - 6px);
   height: 3in;
-  border: 5px solid gray;
+  border: 1px solid gray;
   padding: 1cm 15mm;
   position: relative;
   font-family: 'proxima-nova';
@@ -62,13 +69,10 @@ body {
     margin: 0;
     padding: 0;
     width: 310px; }
-  
   .item h1 {
     margin-top: 40px;
     font-size: 32px;
-    //color: #51307F;
-  }
-
+    color: #51307F; }
   .item h2 {
     font-size: 24px;
     font-weight: 300; }
@@ -81,7 +85,7 @@ body {
     letter-spacing: .5px; }
   .item .icon {
     position: absolute;
-    left: 80%;
+    left: 10px;
     top: 10px;
     //box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
     border-style: solid;
