@@ -1,33 +1,47 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background-color: white; }
+
+/*
 @page {
   width: 8.5in;
   height: 11in;
   padding: 1in .25in 1in .25in;
-  background-color: #FFF; }
+  background-color: red; }
+*/
+
+.reverse {
+  -webkit-filter: invert(1);
+}
 
 body {
-  background-color: #eee; }
+  background-color: white; }
 
 .page {
   width: 8.5in;
   height: 11in;
-  padding: 1in .25in 1in .25in;
-  background-color: #FFF; }
+  padding: 1in 0.1in 1in .1in;
+  background-color: white; }
 
 .item {
-  width: calc(4in);
+  width: 4in;
   height: 3in;
-  border: 5px solid gray;
+  //border: 10px solid gray;
+  //border: 10px solid white;
+  border: 1px solid lightgray;
   padding: 1cm 15mm;
   position: relative;
   font-family: 'proxima-nova';
   display: inline-block;
   vertical-align: top;
-  border-radius: 8px;
+  border-radius: 0px;
   overflow: hidden;
-  margin: 0 -5px 0 0; }
+  //margin: 0 -5px 0 0;
+  margin: 5px 5px 5px 5px;
+   }
+
   .item .color-bar {
     position: absolute;
     left: 0;
@@ -38,6 +52,26 @@ body {
     transform: rotate(-90deg);
     transform-origin: top left;
     padding: 1px 10px; }
+
+  .item .speaker {
+    position: absolute;
+    left: 95%;
+    bottom: -20px;
+    height: 5mm;
+    width: 3in;
+    color: white;
+    background-color: #999;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    padding: 1px 10px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+
+
     .item .color-bar .sector {
       color: white;
       padding: 0;
@@ -45,29 +79,35 @@ body {
       font-size: 32px;
       font-weight: 300;
       letter-spacing: 1px;
-      opacity: .5; }
+      //opacity: .5;
+       }
+
   .item .gov {
     background-color: #00adef; }
+
   .item .com {
     background-color: #3aba9b; }
+
   .item .org {
-    background-color: #f15e22; }
+    background-color: #7300EF; }
+
   .item .edu {
     background-color: #e6235a; }
+
   .item h1, .item h2, .item h3 {
     margin: 0;
     padding: 0;
     width: 310px; }
-  
+
   .item h1 {
     margin-top: 40px;
     font-size: 32px;
-    //color: #51307F;
-  }
+    color: black; }
 
   .item h2 {
     font-size: 24px;
     font-weight: 300; }
+
   .item h3 {
     font-weight: 300;
     text-transform: uppercase;
@@ -75,40 +115,50 @@ body {
     margin-top: 6px;
     color: #999;
     letter-spacing: .5px; }
+
   .item .icon {
     position: absolute;
-    left: 80%;
+    left: 75%;
     top: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    //box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-width: 0px;
     z-index: 10;
-    border-radius: 50%;
+    //border-radius: 50%;
     overflow: hidden;
     padding: 11px;
-    width: 58px;
+    //width: 58px;
     height: 58px; }
+
     .item .icon img {
-      width: 36px;
-      height: 36px;
-      opacity: .5; }
+      width: 48px;
+      height: 48px;
+      opacity: 1; }
+
   .item .branding {
     font-weight: 100;
     position: absolute;
     bottom: 5mm;
     width: calc(100% - 25mm); }
+
     .item .branding p {
       margin: 0;
       overflow: hidden;
       vertical-align: bottom; }
+
     .item .branding .logo {
       width: 10mm;
       float: left;
       margin-right: 5mm; }
+
     .item .branding .event-name {
       font-size: 16px; }
+
     .item .branding .date, .item .branding .place {
       font-size: 12px;
       float: left;
       text-transform: uppercase; }
+
     .item .branding .place {
       float: right;
       text-align: right;
