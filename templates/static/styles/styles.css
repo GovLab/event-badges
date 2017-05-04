@@ -4,13 +4,12 @@
 body {
   background-color: white; }
 
-/*
+
 @page {
   width: 8.5in;
   height: 11in;
   padding: 1in .25in 1in .25in;
   background-color: red; }
-*/
 
 .reverse {
   -webkit-filter: invert(1);
@@ -82,17 +81,21 @@ body {
       //opacity: .5;
        }
 
-  .item .gov {
-    background-color: #00adef; }
+  .item .undergrad {
+    background-color: #1d3092; }
 
   .item .com {
-    background-color: #3aba9b; }
+    background-color: #1d927f; }
 
-  .item .org {
-    background-color: #7300EF; }
+  .item .grad {
+    background-color: #4f4c4c; }
 
-  .item .edu {
-    background-color: #e6235a; }
+  .item .highschool {
+    background-color: #921d6b; }
+
+    .item .verizon { 
+      background-color: red; }
+    }
 
   .item h1, .item h2, .item h3 {
     margin: 0;
@@ -125,9 +128,9 @@ body {
     border-width: 0px;
     z-index: 10;
     //border-radius: 50%;
-    overflow: hidden;
+    overflow2: hidden;
     padding: 11px;
-    //width: 58px;
+    width: 58px;
     height: 58px; }
 
     .item .icon img {

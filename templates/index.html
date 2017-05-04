@@ -15,27 +15,28 @@
     <div class="item">
       {% if tag.field != 'TBD' %}
       <div style="background-color: white;" class="icon {{tag.sector}}">
-        <img class="reverse" src="static/{{tag.field}}.svg" alt="">
+        <img src="static/event-logo.jpg" alt="">
       </div>
       {% endif %}
+      {% if tag.employer == 'Verizon' %}
+      <div class="color-bar verizon">
+        <span class="sector">{{tag.employer}}</span>
+      </div>
+      {% else %}
       <div class="color-bar {{tag.sector}}">
         <span class="sector">.{{tag.sector}}</span>
       </div>
-
-      {% if tag.speaker == 'Speaker' %}
-      <div class="speaker">
-        <span>speaker</span>
-      </div>
       {% endif %}
 
+
       <h1 class="name">{{tag.fname}} {{tag.lname}}</h1>
-      <h2>{{tag.job + "&nbsp;<br/>"}}</h2>
-      <h3>{{tag.org}}</h3>
+      <!-- <h2>{{tag.job + "&nbsp;<br/>"}}</h2> -->
+      <h3>{{tag.employer}}</h3>
       
       <div class="branding">
         {#<div class="logo"><img src="static/logo.svg" alt=""></div>#}
-        <p class="event-name">Accelerating Data Collaboratives</p>
-        <p><span class="date">March 20, 2015 – Washington, DC</span></p>
+        <p class="event-name">WitNY Hackathon</p>
+        <p><span class="date">May 2017 – Cornell Tech NYC Campus</span></p>
       </div>
     </div>
     {% if loop.index is divisibleby 6 %}
